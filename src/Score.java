@@ -82,6 +82,23 @@ public class Score {
 
 
 
+    @Override
+    public boolean equals(Object toBeCompared){
+        if (toBeCompared == this) {
+            return true;
+        }
+
+        if (toBeCompared== null) {
+            return false;
+        }
+
+        if (toBeCompared.getClass() != getClass()) {
+            return false;
+        }
+
+        Score theScore = (Score) toBeCompared;
+        return (theScore.getScore() == getScore());
+    }
 
     @Override
     public String toString(){

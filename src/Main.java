@@ -21,8 +21,8 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         Game.game(players);
-
-
+        //also want to have a file class, where information get stored
+        input.close();
         System.out.println(players);
 
     }
